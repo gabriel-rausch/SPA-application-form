@@ -1,0 +1,86 @@
+.ui-page-theme-a {
+    background: transparent;
+    color: #444;
+}
+/*
+body {
+    background: -webkit-linear-gradient(#43c6ac, #f8ffae);
+    background: linear-gradient(#43c6ac, #f8ffae);
+}*/
+
+/*
+.ui-page-theme-a:nth-child(2) {
+    background: -webkit-linear-gradient(#a9e9b0, #a41d50);
+    background: linear-gradient(#a9e9b0, #a41d50);
+}
+
+.ui-page-theme-a:nth-child(3) {
+    background: -webkit-linear-gradient(#ffbe63,#591566);
+    background: linear-gradient(#ffbe63,#591566);
+}
+
+.ui-page-theme-a:nth-child(4) {
+    background: -webkit-linear-gradient(#ed4264,#ffedbc);
+    background: linear-gradient(#ed4264,#ffedbc);
+}
+
+.ui-page-theme-a:nth-child(5) {
+    background: -webkit-linear-gradient(#341d64,#ffd2e0);
+    background: linear-gradient(#341d64,#ffd2e0);
+}
+
+.ui-page-theme-a:nth-child(6) {
+    background: -webkit-linear-gradient(#ffc371,#ff5f6d);
+    background: linear-gradient(#ffc371,#ff5f6d);
+}
+
+.ui-page-theme-a:nth-child(7) {
+    background: -webkit-linear-gradient(#92e9ff,#5a0d94);
+    background: linear-gradient(#92e9ff,#5a0d94);
+}
+
+.ui-page-theme-a:nth-child(8) {
+    background: -webkit-linear-gradient(#ff8278,#dd2476);
+    background: linear-gradient(#ff8278,#dd2476);
+}*/
+
+
+.ui-checkbox input, .ui-radio input {
+    display: none;
+}
+
+.ui-checkbox .ui-btn, .ui-radio .ui-btn, .ui-checkbox .ui-btn:hover, .ui-radio .ui-btn:hover {
+    background: transparent;
+    color: #444;
+}
+
+
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+    background: transparent;
+}
+
+legend, .ui-input-text input, .ui-input-search input {
+    text-shadow: none;
+}
+
+.ui-controlgroup-horizontal .ui-btn.ui-first-child, .ui-controlgroup-horizontal .ui-controlgroup-controls .ui-btn {
+    color: #444;
+}
+
+.hearts {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: white;
+}
+
+.fa-heart {
+    font-size: 15px;
+    transform: rotate(-1deg) translateX(5px);
+    -webkit-transform: rotate(-1deg) translateX(5px);
+}
+.hearts .big {
+    font-size: 20px;
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+}
