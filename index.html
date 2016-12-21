@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Hochzeit - Vivien & Gabriel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="/css/style.css" />
   <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
@@ -29,131 +30,141 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 </head>
 <body>
-  <div class="hearts">
-    <i class="fa fa-heart"></i>
-    <i class="fa fa-heart big"></i>
+
+<div class="bgfull"></div>
+<div class="bg"></div>
+
+<div id="page-intro" data-role="page">
+  <div data-role="main" class="ui-content wow fadeIn">
+    <br><br><br>
+    <h2><span style="font-size:70px;">Hochzeit</span><br><br>Vivien & Gabriel</h2>
+    <br><br><br>
+    <a href="#zusage-1" onclick="decision('zusage')" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Ja</a><br>
+    <a href="#vielleicht-1" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Vielleicht</a><br>
+    <a href="#absage-1" onclick="decision('absage')" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Nein</a><br>
   </div>
+</div>
 
-  <div id="page-intro" data-role="page">
-      <div data-role="main" class="ui-content wow fadeIn">
-        <h2>Hochzeit<br>Vivien & Gabriel</h2>
-        <p>Bitte auswählen.</p>
-        <a href="#zusage-1" onclick="decision('zusage')" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Zusagen</a><br>
-        <a href="#absage-1" onclick="decision('absage')" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Absagen</a><br>
-      </div>
+<div id="vielleicht-1" data-role="page">
+  <div data-role="content">
+    <h3>Vielleicht?</h3>
+    <p>Vielleicht sind wir gar nicht Vivien und Gabriel, sondern Simone und Kevin. Und vielleicht heiraten wir auch gar nicht, sondern wir wollen euch eigentlich zum Sommerfest der Augsburger Dackelzüchter einladen.</p>
+    <br><br><br>
+    <a href="#page-intro" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Ok, hab's verstanden</a><br>
   </div>
+</div>
 
-  <div id="zusage-1" data-role="page">
-    <div data-role="content">
-      <h3>Dein / Euer Name</h3>
-      <input type="text" name="zusage-name" data-clear-btn="true" placeholder="">
+<div id="zusage-1" data-role="page">
+  <div data-role="content">
+    <h3>Name</h3>
+    <input type="text" name="zusage-name" data-clear-btn="true" placeholder="">
 
-      <br>
-      <h3>Wie viele Personen kommen?</h3>
-      <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-        <input type="radio" name="zusage-anzahl-personen" value="1" id="zusage-anzahl-personen-1">
-        <label for="zusage-anzahl-personen-1">1</label>
-        <input type="radio" name="zusage-anzahl-personen" value="2" id="zusage-anzahl-personen-2">
-        <label for="zusage-anzahl-personen-2">2</label>
-        <input type="radio" name="zusage-anzahl-personen" value="3" id="zusage-anzahl-personen-3">
-        <label for="zusage-anzahl-personen-3">3</label>
-        <input type="radio" name="zusage-anzahl-personen" value="4" id="zusage-anzahl-personen-4">
-        <label for="zusage-anzahl-personen-4">4</label>
-        <input type="radio" name="zusage-anzahl-personen" value="5" id="zusage-anzahl-personen-5">
-        <label for="zusage-anzahl-personen-5">5</label>
-        <input type="radio" name="zusage-anzahl-personen" value="6" id="zusage-anzahl-personen-6">
-        <label for="zusage-anzahl-personen-6">6</label>
-      </fieldset>
+    <br>
+    <h3>Wie viele Personen kommen?</h3>
+    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+      <input type="radio" name="zusage-anzahl-personen" value="1" id="zusage-anzahl-personen-1">
+      <label for="zusage-anzahl-personen-1">1</label>
+      <input type="radio" name="zusage-anzahl-personen" value="2" id="zusage-anzahl-personen-2">
+      <label for="zusage-anzahl-personen-2">2</label>
+      <input type="radio" name="zusage-anzahl-personen" value="3" id="zusage-anzahl-personen-3">
+      <label for="zusage-anzahl-personen-3">3</label>
+      <input type="radio" name="zusage-anzahl-personen" value="4" id="zusage-anzahl-personen-4">
+      <label for="zusage-anzahl-personen-4">4</label>
+      <input type="radio" name="zusage-anzahl-personen" value="5" id="zusage-anzahl-personen-5">
+      <label for="zusage-anzahl-personen-5">5</label>
+      <input type="radio" name="zusage-anzahl-personen" value="6" id="zusage-anzahl-personen-6">
+      <label for="zusage-anzahl-personen-6">6</label>
+    </fieldset>
 
-      <br><br><br>
-      <a href="#zusage-2" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Weiter</a><br>
-    </div>
+    <br><br><br>
+    <a href="#zusage-2" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Weiter</a><br>
   </div>
+</div>
 
-  <div id="zusage-2" data-role="page">
-    <div data-role="content">
-      <h3>Kulinarische Vorlieben?</h3>
-      <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-1" value="Fleisch"><label
-        for="zusage-kulinarische-vorlieben-1">Fleisch!</label>
-      <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-2" value="Käse"><label
-        for="zusage-kulinarische-vorlieben-2">Käse!</label>
-      <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-3" value="Vegetarisch"><label
-        for="zusage-kulinarische-vorlieben-3">Vegetarisch</label>
-      <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-4" value="Vegan"><label
-        for="zusage-kulinarische-vorlieben-4">Vegan</label>
-      <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-5" value="Glutenfrei"><label
-        for="zusage-kulinarische-vorlieben-5">Glutenfrei</label>
-      <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-6" value="Mediteran"><label
-        for="zusage-kulinarische-vorlieben-6">Mediteran</label>
-      <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-7" value="Flexitarier"><label
-        for="zusage-kulinarische-vorlieben-7">Flexitarier</label>
-      <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-8" value="Paleo"><label
-        for="zusage-kulinarische-vorlieben-8">Paleo</label>
-      <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-9" value="Rohkost"><label
-        for="zusage-kulinarische-vorlieben-9">Rohkost</label>
-      <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-10" value="Frutarier"><label
-        for="zusage-kulinarische-vorlieben-10">Frutarier</label>
+<div id="zusage-2" data-role="page">
+  <div data-role="content">
+    <h3>Kulinarische Vorlieben?</h3>
+    <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-1" value="Fleisch"><label
+      for="zusage-kulinarische-vorlieben-1">Fleisch!</label>
+    <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-2" value="Käse"><label
+      for="zusage-kulinarische-vorlieben-2">Käse!</label>
+    <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-3" value="Vegetarisch"><label
+      for="zusage-kulinarische-vorlieben-3">Vegetarisch</label>
+    <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-4" value="Vegan"><label
+      for="zusage-kulinarische-vorlieben-4">Vegan</label>
+    <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-5" value="Glutenfrei"><label
+      for="zusage-kulinarische-vorlieben-5">Glutenfrei</label>
+    <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-6" value="Mediteran"><label
+      for="zusage-kulinarische-vorlieben-6">Mediteran</label>
+    <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-7" value="Flexitarier"><label
+      for="zusage-kulinarische-vorlieben-7">Flexitarier</label>
+    <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-8" value="Paleo"><label
+      for="zusage-kulinarische-vorlieben-8">Paleo</label>
+    <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-9" value="Rohkost"><label
+      for="zusage-kulinarische-vorlieben-9">Rohkost</label>
+    <input type="checkbox" name="zusage-kulinarische-vorlieben" id="zusage-kulinarische-vorlieben-10" value="Frutarier"><label
+      for="zusage-kulinarische-vorlieben-10">Frutarier</label>
 
-      <input type="text" name="zusage-kulinarische-vorlieben-freitext" id="zusage-kulinarische-vorlieben-freitext" data-clear-btn="true" placeholder="Freitext...">
+    <input type="text" name="zusage-kulinarische-vorlieben-freitext" id="zusage-kulinarische-vorlieben-freitext" data-clear-btn="true" placeholder="Freitext...">
 
-      <br><br><br>
-      <a href="#zusage-3" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Weiter</a><br>
-    </div>
+    <br><br><br>
+    <a href="#zusage-3" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Weiter</a><br>
   </div>
+</div>
 
-  <div id="zusage-3" data-role="page">
-    <div data-role="content">
-      <h3>Musikalische Vorlieben?</h3>
+<div id="zusage-3" data-role="page">
+  <div data-role="content">
+    <h3>Musikalische Vorlieben?</h3>
 
-      <input type="checkbox" name="zusage-musik" id="zusage-musik-2" value="Katy Perry"><label for="zusage-musik-2">Katy Perry</label>
-      <input type="checkbox" name="zusage-musik" id="zusage-musik-3" value="ACDC"><label for="zusage-musik-3">ACDC</label>
-      <input type="checkbox" name="zusage-musik" id="zusage-musik-4" value="Vivaldi"><label for="zusage-musik-4">Vivaldi</label>
-      <input type="checkbox" name="zusage-musik" id="zusage-musik-5" value="Oddisee"><label for="zusage-musik-5">Oddisee</label>
-      <input type="checkbox" name="zusage-musik" id="zusage-musik-6" value="Dr. Alban"><label for="zusage-musik-6">Dr. Alban</label>
-      <input type="checkbox" name="zusage-musik" id="zusage-musik-7" value="Joe Cocker"><label for="zusage-musik-7">Joe Cocker</label>
-      <input type="checkbox" name="zusage-musik" id="zusage-musik-8" value="DJ Ötzi"><label for="zusage-musik-8">DJ Ötzi</label>
-      <input type="checkbox" name="zusage-musik" id="zusage-musik-9" value="Alle Farben"><label for="zusage-musik-9">Alle Farben</label>
+    <input type="checkbox" name="zusage-musik" id="zusage-musik-2" value="Katy Perry"><label for="zusage-musik-2">Katy Perry</label>
+    <input type="checkbox" name="zusage-musik" id="zusage-musik-3" value="ACDC"><label for="zusage-musik-3">ACDC</label>
+    <input type="checkbox" name="zusage-musik" id="zusage-musik-4" value="Vivaldi"><label for="zusage-musik-4">Vivaldi</label>
+    <input type="checkbox" name="zusage-musik" id="zusage-musik-5" value="Oddisee"><label for="zusage-musik-5">Oddisee</label>
+    <input type="checkbox" name="zusage-musik" id="zusage-musik-6" value="Dr. Alban"><label for="zusage-musik-6">Dr. Alban</label>
+    <input type="checkbox" name="zusage-musik" id="zusage-musik-7" value="Joe Cocker"><label for="zusage-musik-7">Joe Cocker</label>
+    <input type="checkbox" name="zusage-musik" id="zusage-musik-8" value="DJ Ötzi"><label for="zusage-musik-8">DJ Ötzi</label>
+    <input type="checkbox" name="zusage-musik" id="zusage-musik-9" value="Alle Farben"><label for="zusage-musik-9">Alle Farben</label>
 
-      <input type="text" name="zusage-musik-freitext" data-clear-btn="true" placeholder="Nichts dabei? Hier eingeben...">
+    <input type="text" name="zusage-musik-freitext" data-clear-btn="true" placeholder="Nichts dabei? Hier eingeben...">
 
-      <br><br><br>
-      <a href="#zusage-4" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Weiter</a><br>
-    </div>
+    <br><br><br>
+    <a href="#zusage-4" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Weiter</a><br>
   </div>
+</div>
 
-  <div id="zusage-4" data-role="page">
-    <div data-role="content">
-      <h3>Erwartung an das Fest</h3>
+<div id="zusage-4" data-role="page">
+  <div data-role="content">
+    <h3>Erwartung an das Fest</h3>
 
-      <input type="checkbox" name="zusage-erwartung" id="zusage-erwartung-2" value="Ein schöner Tag im Kreise von Freunden"><label
-        for="zusage-erwartung-2">Ein schöner Tag im Kreise von Freunden</label>
-      <input type="checkbox" name="zusage-erwartung" id="zusage-erwartung-3" value="Lachen, Klatschen, Malen"><label
-        for="zusage-erwartung-3">Lachen, Klatschen, Malen</label>
-      <input type="checkbox" name="zusage-erwartung" id="zusage-erwartung-4" value="Hauptsache dabei"><label
-        for="zusage-erwartung-4">Hauptsache dabei</label>
-      <input type="checkbox" name="zusage-erwartung" id="zusage-erwartung-5" value="Wein, Weib, Gesang"><label
-        for="zusage-erwartung-5">Wein, Weib, Gesang</label>
-      <input type="checkbox" name="zusage-erwartung" id="zusage-erwartung-6" value="Einsamer sucht Einsame zum..."><label
-        for="zusage-erwartung-6">Einsamer sucht Einsame zum...</label>
+    <input type="checkbox" name="zusage-erwartung" id="zusage-erwartung-2" value="Ein schöner Tag im Kreise von Freunden"><label
+      for="zusage-erwartung-2">Ein schöner Tag im Kreise von Freunden</label>
+    <input type="checkbox" name="zusage-erwartung" id="zusage-erwartung-3" value="Lachen, Klatschen, Malen"><label
+      for="zusage-erwartung-3">Lachen, Klatschen, Malen</label>
+    <input type="checkbox" name="zusage-erwartung" id="zusage-erwartung-4" value="Hauptsache dabei"><label
+      for="zusage-erwartung-4">Hauptsache dabei</label>
+    <input type="checkbox" name="zusage-erwartung" id="zusage-erwartung-5" value="Wein, Weib, Gesang"><label
+      for="zusage-erwartung-5">Wein, Weib, Gesang</label>
+    <input type="checkbox" name="zusage-erwartung" id="zusage-erwartung-6" value="Einsamer sucht Einsame zum..."><label
+      for="zusage-erwartung-6">Einsamer sucht Einsame zum...</label>
 
-      <input type="text" name="zusage-erwartung-freitext" data-clear-btn="true" placeholder="Freitext">
+    <input type="text" name="zusage-erwartung-freitext" data-clear-btn="true" placeholder="Freitext">
 
-      <br><br><br>
-      <a href="#zusage-end" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Absenden</a><br>
-    </div>
+    <br><br><br>
+    <a href="#zusage-end" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Absenden</a><br>
   </div>
+</div>
 
-  <div id="zusage-end" data-role="page">
-    <div data-role="content">
-      <p>Die Zusage muss jetzt nur noch über unser Voiceident-Verfahren (Identifizierung per Stimme) verifiziert werden.</p>
-      <p>Dazu bitte folgende Nummer wählen und unserer freundlichen Assistentin den Namen und das Stichwort "Zusage" mitteilen.</p>
-      <h3>0711 34 81 776</h3>
-      <p><i>(Unser Service-Point ist werktags zwischen 9:00 und 18:00 Uhr für Sie da. Bitte bis zu 60 Sekunden klingen lassen!)</i></p>
-      <br><br><br>
-      <p>Sollte ein technisches Problem vorliegen oder sich unsere Telefon-Assistentin in einem längeren Gespräch befinden, dann bitte hier wählen:</p>
-      <a href="#hilfe" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Hilfe</a><br>
-    </div>
+<div id="zusage-end" data-role="page">
+  <div data-role="content">
+    <p>Die Zusage muss jetzt nur noch über unser Voiceident-Verfahren (Identifizierung per Stimme) verifiziert werden.</p>
+    <p>Dazu bitte folgende Nummer wählen und unserer freundlichen Assistentin den Namen und das Stichwort "Zusage" mitteilen.</p>
+    <h3>0711 34 81 776</h3>
+    <p><i>(Unser Service-Point ist werktags zwischen 9:00 und 18:00 Uhr für Sie da. Bitte bis zu 60 Sekunden klingen lassen!)</i></p>
+    <br><br><br>
+    <p>Sollte ein technisches Problem vorliegen oder sich unsere Telefon-Assistentin in einem längeren Gespräch befinden, dann bitte hier wählen:</p>
+    <a href="#hilfe" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Hilfe</a><br>
   </div>
+</div>
 
 
 
@@ -162,100 +173,100 @@
 
 
 
-  <div id="absage-1" data-role="page">
-    <div data-role="content">
-      <h3>Dein / Euer Name</h3>
-      <input type="text" name="absage-name" data-clear-btn="true" placeholder="">
+<div id="absage-1" data-role="page">
+  <div data-role="content">
+    <h3>Name</h3>
+    <input type="text" name="absage-name" data-clear-btn="true" placeholder="">
 
-      <br><br>
-      <a href="#absage-2" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Weiter</a><br>
-    </div>
+    <br><br>
+    <a href="#absage-2" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Weiter</a><br>
   </div>
+</div>
 
-  <div id="absage-2" data-role="page">
-    <div data-role="content">
-      <h3>Was ist der Grund für die Absage?</h3>
+<div id="absage-2" data-role="page">
+  <div data-role="content">
+    <h3>Was ist der Grund für die Absage?</h3>
 
-      <p>Wir würden ja gerne, aber...</p>
+    <p>Wir würden ja gerne, aber...</p>
 
-      <fieldset id="test">
-        <input type="radio" name="absage-grund" id="absage-grund-2" value="1"><label for="absage-grund-2">unsere Katze ist schwanger.</label>
-        <input type="radio" name="absage-grund" id="absage-grund-3" value="2"><label for="absage-grund-3">wir wissen nicht wo Weimar ist (und wollen es auch nicht wissen).</label>
-        <input type="radio" name="absage-grund" id="absage-grund-4" value="3"><label for="absage-grund-4">wir sind da drei Wochen im Harz.</label>
-        <input type="radio" name="absage-grund" id="absage-grund-5" value="4"><label for="absage-grund-5">genau an dem Wochenende haben wir alle einen Zahnarzttermin.</label>
-        <input type="radio" name="absage-grund" id="absage-grund-6" value="5"><label for="absage-grund-6">Anderer Grund (bitte im Textfeld ergänzen)</label>
+    <fieldset id="test">
+      <input type="radio" name="absage-grund" id="absage-grund-2" value="1"><label for="absage-grund-2">unsere Katze ist schwanger.</label>
+      <input type="radio" name="absage-grund" id="absage-grund-3" value="2"><label for="absage-grund-3">wir wissen nicht wo Weimar ist (und wollen es auch nicht wissen).</label>
+      <input type="radio" name="absage-grund" id="absage-grund-4" value="3"><label for="absage-grund-4">wir sind da drei Wochen im Harz.</label>
+      <input type="radio" name="absage-grund" id="absage-grund-5" value="4"><label for="absage-grund-5">genau an dem Wochenende haben wir alle einen Zahnarzttermin.</label>
+      <input type="radio" name="absage-grund" id="absage-grund-6" value="5"><label for="absage-grund-6">Anderer Grund (bitte im Textfeld ergänzen)</label>
 
-      </fieldset>
-      <input type="text" name="absage-grund-freitext" data-clear-btn="true" placeholder="Freitext">
-      <br><br>
-      <a href="#absage-end" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Absenden</a><br>
-    </div>
+    </fieldset>
+    <input type="text" name="absage-grund-freitext" data-clear-btn="true" placeholder="Freitext">
+    <br><br>
+    <a href="#absage-end" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Absenden</a><br>
   </div>
+</div>
 
-  <div id="absage-end" data-role="page">
-    <div data-role="content">
-      <p>Die Absage muss jetzt nur noch über unser Voiceident-Verfahren (Identifizierung per Stimme) verifiziert werden.</p>
-      <p>Dazu bitte folgende Nummer wählen und unserer freundlichen Assistentin den Namen und das Stichwort "Absage" mitteilen.</p>
-      <h3>0711 34 81 776</h3>
-      <p><i>(Unser Service-Point ist werktags zwischen 9:00 und 18:00 Uhr für Sie da. Bitte bis zu 60 Sekunden klingen lassen!)</i></p>
-      <br><br><br>
-      <p>Sollte ein technisches Problem vorliegen oder sich unsere Telefon-Assistentin in einem längeren Gespräch befinden, dann bitte die Hilfe aufrufen</p>
-      <a href="#hilfe" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Hilfe</a><br>
-    </div>
+<div id="absage-end" data-role="page">
+  <div data-role="content">
+    <p>Die Absage muss jetzt nur noch über unser Voiceident-Verfahren (Identifizierung per Stimme) verifiziert werden.</p>
+    <p>Dazu bitte folgende Nummer wählen und unserer freundlichen Assistentin den Namen und das Stichwort "Absage" mitteilen.</p>
+    <h3>0711 34 81 776</h3>
+    <p><i>(Unser Service-Point ist werktags zwischen 9:00 und 18:00 Uhr für Sie da. Bitte bis zu 60 Sekunden klingen lassen!)</i></p>
+    <br><br><br>
+    <p>Sollte ein technisches Problem vorliegen oder sich unsere Telefon-Assistentin in einem längeren Gespräch befinden, dann bitte die Hilfe aufrufen</p>
+    <a href="#hilfe" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Hilfe</a><br>
   </div>
+</div>
 
-  <div id="hilfe" data-role="page">
-    <div data-role="content">
-      <h3>Hilfe</h3>
-      <p>Folgenden Drei-Punkte-Plan beachten:</p>
-      <ul>
-        <li>Das Telefon ist angeschlossen?</li>
-        <li>Gegebenenfalls das Telefon neu starten.</li>
-        <li>Bis zu 60 Sekunden klingeln lassen</li>
-      </ul>
-      <h3>0711 34 81 776</h3>
-      <p><i>(Bitte Öffnungszeiten beachten)</i></p>
-    </div>
+<div id="hilfe" data-role="page">
+  <div data-role="content">
+    <h3>Hilfe</h3>
+    <p>Folgenden Drei-Punkte-Plan beachten:</p>
+    <ul>
+      <li>Das Telefon ist angeschlossen?</li>
+      <li>Gegebenenfalls das Telefon neu starten.</li>
+      <li>Bis zu 60 Sekunden klingeln lassen</li>
+    </ul>
+    <h3>0711 34 81 776</h3>
+    <p><i>(Bitte Öffnungszeiten beachten)</i></p>
   </div>
+</div>
 
-  <script>
+<script>
 
-    var thisDecision = '';
-    var success = false;
+  var thisDecision = '';
+  var success = false;
 
-    function send() {
-      $.ajax({
-        type: "POST",
-        url: '/send.php',
-        data: aggregateData()
-      }).done(function() {
-        success = true;
-      });
-    }
+  function send() {
+    $.ajax({
+      type: "POST",
+      url: 'send.php',
+      data: aggregateData()
+    }).done(function() {
+      success = true;
+    });
+  }
 
-    function aggregateData() {
-      var data = {};
-      $('body').find('input[name*='+thisDecision+']:checked, input[type=text][name*='+thisDecision+']').each(function() {
-        if(data[$(this).attr('name')]) {
-          data[$(this).attr('name')] += '; ' + $(this).val();
-        } else {
-          data[$(this).attr('name')] = $(this).val();
-        }
-      });
-
-      return data;
-    }
-
-    function decision(type) {
-      thisDecision = type;
-    }
-
-    $('#absage-end, #zusage-end').on('pageshow', function() {
-      if (!success) {
-        send();
+  function aggregateData() {
+    var data = {};
+    $('body').find('input[name*='+thisDecision+']:checked, input[type=text][name*='+thisDecision+']').each(function() {
+      if(data[$(this).attr('name')]) {
+        data[$(this).attr('name')] += '; ' + $(this).val();
+      } else {
+        data[$(this).attr('name')] = $(this).val();
       }
     });
 
-  </script>
+    return data;
+  }
+
+  function decision(type) {
+    thisDecision = type;
+  }
+
+  $('#absage-end, #zusage-end').on('pageshow', function() {
+    if (!success) {
+      send();
+    }
+  });
+
+</script>
 </body>
 </html>
