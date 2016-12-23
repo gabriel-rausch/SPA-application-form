@@ -127,3 +127,7 @@ h2, h3 {
     width: 50%;
     margin: 10px 25% 25px;
 }
+
+h3 a {
+    color: white !important;
+}
