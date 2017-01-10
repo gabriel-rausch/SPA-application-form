@@ -95,10 +95,6 @@
 
 <div id="zusage-1" data-role="page">
   <div data-role="content">
-    <h3>Name</h3>
-    <input type="text" name="zusage-name" data-clear-btn="true" placeholder="Bitte hier eintragen">
-
-    <br>
     <h3>Wie viele Personen kommen?</h3>
     <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
       <input type="radio" name="zusage-anzahl-personen" value="1" id="zusage-anzahl-personen-1">
@@ -115,8 +111,23 @@
       <label for="zusage-anzahl-personen-6">6</label>
     </fieldset>
 
+    <br>
+
+    <h3>Name</h3>
+    <input type="text" name="zusage-name" data-clear-btn="true" placeholder="Bitte hier eintragen">
+
+    <i id="pleaseinsertname" style="display:none;">Bitte Name eintragen!</i>
+
     <br><br><br>
-    <a href="#zusage-2" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Weiter</a><br>
+    <a href="#zusage-2" id="namezusage82" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Weiter</a><br>
+    <script>
+      $("#namezusage82").click(function(e) {
+        if ($("input[name=zusage-name]").val() === "") {
+          e.preventDefault();
+          $("#pleaseinsertname").show();
+        }
+      })
+    </script>
   </div>
 </div>
 
@@ -197,7 +208,7 @@
   <div data-role="content">
     <p>Die Zusage muss jetzt nur noch über unser Voiceident-Verfahren (Identifizierung per Stimme) verifiziert werden.</p>
     <p>Dazu bitte folgende Nummer wählen und unserer freundlichen Assistentin den Namen und das Stichwort "Zusage" mitteilen.</p>
-    <h3>0711 34 81 776</h3>
+    <h3><a href="tel:+497113481776">0711 34 81 776</a></h3>
     <p><i>(Unser Service-Point ist werktags zwischen 9:00 und 18:00 Uhr für Sie da. Bitte bis zu 60 Sekunden klingen lassen!)</i></p>
     <br><br><br>
     <p>Sollte ein technisches Problem vorliegen oder sich unsere Telefon-Assistentin in einem längeren Gespräch befinden, dann bitte hier wählen:</p>
@@ -217,8 +228,19 @@
     <h3>Name</h3>
     <input type="text" name="absage-name" data-clear-btn="true" placeholder="Bitte hier eintragen">
 
+    <i id="pleaseinsertname2" style="display:none;">Bitte Name eintragen!</i>
+
     <br><br>
-    <a href="#absage-2" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Weiter</a><br>
+    <a href="#absage-2" id="nameabsage472" class="ui-btn ui-btn-raised clr-primary" data-transition="slidefade">Weiter</a><br>
+
+    <script>
+      $("#nameabsage472").click(function(e) {
+        if ($("input[name=absage-name]").val() === "") {
+          e.preventDefault();
+          $("#pleaseinsertname2").show();
+        }
+      })
+    </script>
   </div>
 </div>
 
@@ -246,7 +268,7 @@
   <div data-role="content">
     <p>Die Absage muss jetzt nur noch über unser Voiceident-Verfahren (Identifizierung per Stimme) verifiziert werden.</p>
     <p>Dazu bitte folgende Nummer wählen und unserer freundlichen Assistentin den Namen und das Stichwort "Absage" mitteilen.</p>
-    <h3>0711 34 81 776</h3>
+    <h3><a href="tel:+497113481776">0711 34 81 776</a></h3>
     <p><i>(Unser Service-Point ist werktags zwischen 9:00 und 18:00 Uhr für Sie da. Bitte bis zu 60 Sekunden klingen lassen!)</i></p>
     <br><br><br>
     <p>Sollte ein technisches Problem vorliegen oder sich unsere Telefon-Assistentin in einem längeren Gespräch befinden, dann bitte die Hilfe aufrufen</p>
@@ -263,7 +285,7 @@
       <li>Gegebenenfalls das Telefon neu starten.</li>
       <li>Bis zu 60 Sekunden klingeln lassen</li>
     </ul>
-    <h3>0711 34 81 776</h3>
+    <h3><a href="tel:+497113481776">0711 34 81 776</a></h3>
     <p><i>(Bitte Öffnungszeiten beachten)</i></p>
   </div>
 </div>
